@@ -1,0 +1,13 @@
+---
+title: "Superdeterminismo"
+author: "Marcos Gil"
+format: revealjs
+---
+
+# O que é?
+
+# As hipóteses da desigualdade de Bell
+
+# Controvérsias
+
+# Conclusão
