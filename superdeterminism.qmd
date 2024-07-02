@@ -22,24 +22,28 @@ Superdeterminismo é uma classe de teorias que violam uma dessas hipóteses.
 
 Essa suposição é controversa, pois muitos afirmam ter implicações indesejadas, como a ausência de livre arbítrio ou a impossibilidade total de se realizar ciência.
 
-# As hipóteses da desigualdade de Bell
+# Teste de Bell
 
-Explicar a correlação $p(ab|xy)$ entre medidas espacialmente separadas
+![](images/bell_experiment.png)
+
+. . .
+
+Explicar a correlação $p(AB|ab)$ entre as medidas
 
 . . .
 
 Supõem-se variáveis ocultas:
 
 $$
-p(ab|xy) = \sum_\lambda p(ab|xy\lambda) p(\lambda | xy)
+p(AB|ab) = \sum_\lambda p(AB|ab\lambda) p(\lambda | ab)
 $$
 
 ## 1 - Determinismo
 
-As variáveis ocultas informação completa sobre o resultado das medidas:
+As variáveis ocultas determinam completamente o resultado das medidas:
 
 $$
-p(ab|xy\lambda) \in \{ 0,1\}
+p(AB|ab\lambda) \in \{ 0,1\}
 $$
 
 . . .
@@ -49,7 +53,7 @@ Depois de algumas contas...
 . . .
 
 $$
-\Rightarrow p(ab|xy\lambda) = p(a|xy\lambda)p(b|xy\lambda)
+\Rightarrow p(AB|ab\lambda) = p(A|ab\lambda)p(B|ab\lambda)
 $$
 
 ## 2 - Localidade
@@ -67,11 +71,11 @@ O resultado da medida de Alice não depende da configuração do detector de Bob
 . . .
 
 $$
-p(a|xy\lambda) = p(a|x\lambda)
+p(A|ab\lambda) = p(A|a\lambda)
 $$
 
 $$
-p(b|xy\lambda) = p(b|y\lambda)
+p(B|ab\lambda) = p(B|b\lambda)
 $$
 
 ## 3 - Independência estatística
@@ -85,7 +89,7 @@ A variável oculta não depende da escolha da configuração do detector:
 . . .
 
 $$
-p(\lambda|xy) = p(\lambda)
+p(\lambda|ab) = p(\lambda)
 $$
 
 ---
@@ -93,12 +97,12 @@ $$
 Com essas hipóteses, temos
 
 $$
-p(ab|xy) = \sum_{\lambda} p(a|x\lambda) p(b|y\lambda) p(\lambda)
+p(AB|ab) = \sum_{\lambda} p(A|a\lambda) p(B|b\lambda) p(\lambda)
 $$
 
 . . .
 
-Dada esta decomposição de $p(ab|xy)$, prova-se a desigualdade de Bell, CHSH ...
+Dada esta decomposição de $p(AB|ab)$, prova-se a desigualdade de Bell, CHSH ...
 
 . . .
 
@@ -106,7 +110,7 @@ Como a desigualdade é violada experimentalmente, alguma das hipóteses é falsa
 
 ---
 
-Superdeterminismo é uma classe de teorias na qual a independência estatística é violada: $p(\lambda|xy) \ne p(\lambda)$.
+Superdeterminismo é uma classe de teorias na qual a independência estatística é violada: $p(\lambda|ab) \ne p(\lambda)$.
 
 . . .
 
