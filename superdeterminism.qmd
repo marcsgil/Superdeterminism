@@ -1,13 +1,127 @@
 ---
 title: "Superdeterminismo"
 author: "Marcos Gil"
-format: revealjs
+format:
+  revealjs:
+    slideNumber: true
 ---
 
 # O que é?
 
+A desigualdade de Bell é violada.
+
+. . .
+
+Logo, alguma das hipóteses em sua dedução é violada.
+
+. . .
+
+Superdeterminismo é uma classe de teorias que violam uma dessas hipóteses.
+
+. . .
+
+Essa suposição é controversa, pois muitos afirmam ter implicações indesejadas, como a ausência de livre arbítrio ou a impossibilidade total de se realizar ciência.
+
 # As hipóteses da desigualdade de Bell
 
+Explicar a correlação $p(ab|xy)$ entre medidas espacialmente separadas
+
+. . .
+
+Supõem-se variáveis ocultas:
+
+$$
+p(ab|xy) = \sum_\lambda p(ab|xy\lambda) p(\lambda | xy)
+$$
+
+## 1 - Determinismo
+
+As variáveis ocultas informação completa sobre o resultado das medidas:
+
+$$
+p(ab|xy\lambda) \in \{ 0,1\}
+$$
+
+. . .
+
+Depois de algumas contas...
+
+. . .
+
+$$
+\Rightarrow p(ab|xy\lambda) = p(a|xy\lambda)p(b|xy\lambda)
+$$
+
+## 2 - Localidade
+
+No signaling, sem ação à distância ...
+
+. . .
+
+Os detectores estão separados espacialmente.
+
+. . .
+
+O resultado da medida de Alice não depende da configuração do detector de Bob, e vice versa:
+
+. . .
+
+$$
+p(a|xy\lambda) = p(a|x\lambda)
+$$
+
+$$
+p(b|xy\lambda) = p(b|y\lambda)
+$$
+
+## 3 - Independência estatística
+
+Livre arbítrio, não conspiração...
+
+. . .
+
+A variável oculta não depende da escolha da configuração do detector:
+
+. . .
+
+$$
+p(\lambda|xy) = p(\lambda)
+$$
+
+---
+
+Com essas hipóteses, temos
+
+$$
+p(ab|xy) = \sum_{\lambda} p(a|x\lambda) p(b|y\lambda) p(\lambda)
+$$
+
+. . .
+
+Dada esta decomposição de $p(ab|xy)$, prova-se a desigualdade de Bell, CHSH ...
+
+. . .
+
+Como a desigualdade é violada experimentalmente, alguma das hipóteses é falsa. Qual?
+
+---
+
+Superdeterminismo é uma classe de teorias na qual a independência estatística é violada: $p(\lambda|xy) \ne p(\lambda)$.
+
+. . .
+
+Não é uma única teoria - diferentes propostas podem levar a essa violação.
+
+. . .
+
+Geralmente podemos 
+
 # Controvérsias
+
+## Ausência de livre abítrio
+
+## Superdeterminismo mata a ciência
+
+
 
 # Conclusão
