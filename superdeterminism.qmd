@@ -28,15 +28,35 @@ Essa suposição é controversa, pois muitos afirmam ter implicações indesejad
 
 . . .
 
-Explicar a correlação $p(AB|ab)$ entre as medidas
+Explicar a correlação $p(AB|ab)$ entre as medidas:
 
 . . .
 
-Supõem-se variáveis ocultas:
+$$
+p(A = 1, B = -1 | a=Z, b=Z) = 1
+$$
+
+. . .
+
+$$
+p(A = 1, B = 1 | a=Z, b=X) = \frac{1}{2} \ldots
+$$
+
+---
+
+Supõe-se variáveis ocultas:
 
 $$
 p(AB|ab) = \sum_\lambda p(AB|ab\lambda) p(\lambda | ab)
 $$
+
+. . .
+
+Em seguida, faz-se hipóteses sobre $p(AB|ab\lambda)$ e $p(\lambda | ab)$, de onde obtemos desigualdades.
+
+. . .
+
+Vamos análisá-las...
 
 ## 1 - Determinismo
 
@@ -80,7 +100,7 @@ $$
 
 ## 3 - Independência estatística
 
-Livre arbítrio, não conspiração...
+Independência da medida, livre arbítrio, não conspiração...
 
 . . .
 
@@ -106,26 +126,132 @@ Dada esta decomposição de $p(AB|ab)$, prova-se a desigualdade de Bell, CHSH ..
 
 . . .
 
-Como a desigualdade é violada experimentalmente, alguma das hipóteses é falsa. Qual?
-
----
-
-Superdeterminismo é uma classe de teorias na qual a independência estatística é violada: $p(\lambda|ab) \ne p(\lambda)$.
+Como as desigualdades são violadas experimentalmente, alguma das hipóteses é falsa. Qual?
 
 . . .
 
-Não é uma única teoria - diferentes propostas podem levar a essa violação.
+**Superdeterminismo** é uma classe de teorias na qual a independência estatística é violada: $p(\lambda|ab) \ne p(\lambda)$.
+
+# Por quê?
 
 . . .
 
-Geralmente podemos 
+Violações na desigualdade de Bell não especificam qual das hipóteses é falsa.
 
-# Controvérsias
+. . .
+
+A princípio, deveria-se investigar todas as hipóteses, uma a uma.
+
+. . .
+
+Determinismo e localidade já estão presentes na mecânica clássica.
+
+. . .
+
+Mais importante: **estão presentes na Relatividade Geral**!
+
+. . .
+
+Se mantermos essas duas hipóteses, é possível que seja mais simples unificar M.Q. e R.G.
+
+
+# Por quê não?
 
 ## Ausência de livre abítrio
 
+. . .
+
+$p(\lambda | ab) \ne p(\lambda) \Rightarrow$ o experimental não é livre para escolher a configuração de seus detectores.
+
+. . .
+
+Mas o que é livre arbítrio?
+
+. . .
+
+- **"Possibilidade de fazer as coisas de outra forma"**
+
+. . .
+
+Qualquer teoria determinística já viola essa noção...
+
+. . .
+
+**"A ausência de impedimentos que impeçam alguém de fazer o que deseja"**
+
+. . .
+
+As leis da físca já são impedimentos: não é possível colocar dois elétrons com mesmo spin no mesmo nível de energia.
+
 ## Superdeterminismo mata a ciência
 
+. . .
+
+**"Imagine um teste onde um grupo de ratos é forçado a fumar, enquanto outro não. Observa-se que os que fumaram tiveram maior incidência de câncer. Se superdeterminismo fosse verdade, não seria possível concluir que fumar causa câncer: poderia-se argumentar que não é possível escolher um grupo fumante sem que eles já possuam uma predisposição genética."**
+
+. . .
+
+A mecânica quântica é irrelevante para grandes escalas.
+
+. . .
+
+Não é de se estranhar que coisas que valham para o mundo microscópico deixem de valer para o macroscópico.
+
+# Como?
+
+. . .
+
+Teorias superdeteminísticas ainda não foram muito exploradas.
+
+. . .
+
+Muitas das abordagens são apenas *toy models*
+
+---
+
+![](images/prl_model.png)
+
+---
+
+Teorias mais completas tentam resolver o problema da medida.
+
+. . .
+
+Similaridade entre equações de Liouville e von-Neumann:
+
+$$
+\partial_t \rho = \{ H, \rho \}; \ \ \ i \hbar \partial_t \rho = [ H, \rho ]
+$$
+
+. . .
+
+A dinâmica, incluindo a as variáveis ocultas, é não linear, para abarcar o problema da medida.
+
+. . .
+
+Caos $\sim$ falta de previsibilidade na M.Q.
+
+. . .
+
+Atratores $\sim$ colapso durante a medida.
+
+# Como medir?
+
+. . .
+
+- Variáveis ocultas devem apresentar uma dinâmica.
+
+. . .
+
+- Para sistemas muito frios e medidas sequênciais muito rápidas, poderíamos observar desvios da lei de Born
 
 
-# Conclusão
+# Referências
+
+- Hall, Michael JW. "Local Deterministic Model of Singlet State Correlations Based on Relaxing Measurement Independence." Physical review letters 105.25 (2010): 250404.
+
+- Hossenfelder, Sabine, and Tim Palmer. "Rethinking superdeterminism." Frontiers in Physics 8 (2020): 139.
+
+- Hossenfelder, Sabine. "Superdeterminism: A guide for the perplexed." arXiv preprint arXiv:2010.01324 (2020).
+
+- https://www.youtube.com/watch?v=ytyjgIyegDI - "Does Superdeterminism save Quantum Mechanics? Or does it kill free will and destroy science?"
